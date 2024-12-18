@@ -13,7 +13,7 @@ The following sensitive OAT substrates as victim drugs were selected:
 **Figure 1** shows the prespecified and developed DDI modeling network of interacting perpetrator and victim drugs for the OSP suite qualification of predicting MATE1/OCT-mediated DDI.
 
 **Figure** **1: MATE1/OCT DDI modeling**
-![DDI MATE/OCT network](images/DDI_mate_oct_Compound_Network.png)
+![DDI MATE1/OCT network](images/DDI_mate_oct_Compound_Network.png)
 
 <sub>The arrows indicate where at least one clinical DDI study between the two connected substances was available and included in the model network. Red indicates inhibition and green indicates induction as the primary type of interaction.</sub>
 

@@ -1,6 +1,6 @@
 The release of the snapshot containing the respective simulations can be found here: <https://github.com/Open-Systems-Pharmacology/Cimetidine-Metformin-DDI>
 
-Cimetidine and metformin DDI was described by competitive inhibition of OCT1, OCT2 and MATE1. The DDI was initially  developed and published by [Hanke 2020](#5-references) and adjusted later on to PK-Sim V11.
+The Cimetidine and metformin DDI was initially  developed and published by [Hanke 2020](#5-references) and adjusted later on to PK-Sim V11.  The DDI was characterized by competitive inhibition of OCT1, OCT2 and MATE1. 
 
 The Cimetidine-Metformin interaction was evaluated using 3 clinical DDI studies including 5 clinical DDI scenarios  ([Boehringer 2018](#references), [Somogyi 1987](#references), [Wang 2008](#references)).
 
