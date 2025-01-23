@@ -3,15 +3,15 @@
     "Projects": [
         {
             "Id": "Cimetidine",
-            "Path": "https://github.com/PavelBal/Cimetidine-Model/blob/update-mate1-Ki/Cimetidine-Model.json"
+            "Path": "https://raw.githubusercontent.com/PavelBal/Cimetidine-Model/refs/heads/update-mate1-Ki/Cimetidine-Model.json"
         },
         {
             "Id": "Metformin",
-            "Path": "https://github.com/mgsc1020/Metformin-Model/blob/master/Metformin-Model.json"
+            "Path": "https://raw.githubusercontent.com/mgsc1020/Metformin-Model/refs/heads/master/Metformin-Model.json"
         },
         {
             "Id": "Cimetidine-Metformin-DDI",
-            "Path": "https://github.com/mgsc1020/Cimetidine-Metformin-DDI/blob/master/Cimetidine-Metformin-DDI.json",
+            "Path": "https://raw.githubusercontent.com/mgsc1020/Cimetidine-Metformin-DDI/refs/heads/master/Cimetidine-Metformin-DDI.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",
