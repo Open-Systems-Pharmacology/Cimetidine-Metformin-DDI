@@ -3,20 +3,25 @@
     "Projects": [
         {
             "Id": "Cimetidine",
-            "Path": "../../Cimetidine-Model.json"
+            "Path": "https://github.com/PavelBal/Cimetidine-Model/blob/update-mate1-Ki/Cimetidine-Model.json"
         },
         {
             "Id": "Metformin",
-            "Path": "../../Metformin-Model.json"
+            "Path": "https://github.com/mgsc1020/Metformin-Model/blob/master/Metformin-Model.json"
         },
         {
             "Id": "Cimetidine-Metformin-DDI",
-            "Path": "../../Cimetidine-Metformin-DDI-V11.json",
+            "Path": "https://github.com/mgsc1020/Cimetidine-Metformin-DDI/blob/master/Cimetidine-Metformin-DDI.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",
                     "Name": "Cimetidine",
                     "Project": "Cimetidine"
+                },
+                {
+                    "Type": "Compound",
+                    "Name": "Metformin",
+                    "Project": "Metformin"
                 },
                 {
                     "Type": "Formulation",
@@ -30,11 +35,6 @@
                 },
                 {
                     "Type": "Formulation",
-                    "Name": "Solution",
-                    "Project": "Metformin"
-                },
-                {
-                    "Type": "Formulation",
                     "Name": "Glucophage Tablet_Block 2008 (Weibull and food)",
                     "Project": "Metformin"
                 }, 
@@ -42,8 +42,7 @@
                     "Type": "Formulation",
                     "Name": "Glucophage Tablet_Block 2008 (Weibull)",
                     "Project": "Metformin"
-                }               
-
+                }
             ]
         }
     ],
