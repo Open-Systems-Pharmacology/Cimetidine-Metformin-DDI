@@ -5,7 +5,7 @@ Modeling of published clinical Cimetidine-Metformin-DDI studies for model evalua
 Within this repository, we share a PK-Sim project file containing simulations of all published clinical studies used to evaluate the predictive performance of our models regarding the Cimetidine-Metformin-DDI, including the respective observed data. For further details and documentation please refer to [[1](#reference)].
 
 ### Version information
-PK-Sim Version 8.0.
+PK-Sim Version V11.
 
 ### License
 The model is distributed under the [GPLv2 License](https://github.com/Open-Systems-Pharmacology/Suite/blob/develop/LICENSE). 
