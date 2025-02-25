@@ -319,7 +319,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17006,
+                                "ObservedDataRecordId": 18006,
                                 "SimulationControl": {
                                     "Project": "Cimetidine-Metformin-DDI",
                                     "Simulation": "DDI, Metformin Cocktail, Boehringer 2018, n=11",
@@ -338,7 +338,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17007,
+                                "ObservedDataRecordId": 18007,
                                 "SimulationControl": {
                                     "Project": "Cimetidine-Metformin-DDI",
                                     "Simulation": "DDI, Metformin, Somogyi 1987, fed, n=7",
@@ -357,7 +357,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17008,
+                                "ObservedDataRecordId": 18008,
                                 "SimulationControl": {
                                     "Project": "Cimetidine-Metformin-DDI",
                                     "Simulation": "DDI, Metformin, Boehringer 2018, n=13",
@@ -376,7 +376,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17009,
+                                "ObservedDataRecordId": 18009,
                                 "SimulationControl": {
                                     "Project": "Cimetidine-Metformin-DDI",
                                     "Simulation": "DDI, Metformin, Wang 2008, n=6",
