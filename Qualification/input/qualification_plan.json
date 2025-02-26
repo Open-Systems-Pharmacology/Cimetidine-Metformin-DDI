@@ -11,7 +11,7 @@
         },
         {
             "Id": "Cimetidine-Metformin-DDI",
-            "Path": "https://raw.githubusercontent.com/mgsc1020/Cimetidine-Metformin-DDI/refs/heads/master/Cimetidine-Metformin-DDI.json",
+            "Path": "../../Cimetidine-Metformin-DDI.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",
