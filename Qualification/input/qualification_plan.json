@@ -49,7 +49,7 @@
     "ObservedDataSets": [
         {
             "Id": "DDI Ratios",
-            "Path": "../../DDI.csv",
+            "Path": "https://raw.githubusercontent.com/mgsc1020/Database-for-observed-data/refs/heads/master/DDI.csv",
             "Type": "DDIRatio"
         }
     ],
@@ -174,7 +174,7 @@
                 "OutputMappings": [
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Cimetidine + Metformin Cocktail, Boehringer 2018, n=11",
+                        "Simulation": "DDI, Metformin Cocktail, Boehringer 2018, n=11",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Plasma, Metformin Control, n=11",
                         "StartTime": 1,
@@ -185,7 +185,7 @@
                     },
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Metformin Cocktail, Boehringer 2018, n=11",
+                        "Simulation": "DDI, Cimetidine + Metformin Cocktail, Boehringer 2018, n=11",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Plasma, Metformin + Cimetidine, n=11",
                         "StartTime": 1,
