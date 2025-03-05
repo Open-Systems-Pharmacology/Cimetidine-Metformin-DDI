@@ -199,12 +199,12 @@
             {
                 "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
                 "Title": "Boehringer 2018 (390 mg PO)",
-                "SimulationDuration": 50,
+                "SimulationDuration": 45,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Cimetidine + Metformin, Boehringer 2018, n=13",
+                        "Simulation": "DDI, Metformin, Boehringer 2018, n=13",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Boehringer_2018, po 390 mg, solution, Plasma, Metformin Control, n=13",
                         "StartTime": 1,
@@ -215,7 +215,7 @@
                     },
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Metformin, Boehringer 2018, n=13",
+                        "Simulation": "DDI, Cimetidine + Metformin, Boehringer 2018, n=13",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Boehringer_2018, po 390 mg, solution, Plasma, Metformin + Cimetidine, n=13",
                         "StartTime": 1,
@@ -229,7 +229,7 @@
             {
                 "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
                 "Title": "Somogyi 1987 (195 mg PO)",
-                "SimulationDuration": 150,
+                "SimulationDuration": 130,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -259,12 +259,12 @@
             {
                 "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
                 "Title": "Wang 2008 (390 mg PO)",
-                "SimulationDuration": 180,
+                "SimulationDuration": 40,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Cimetidine + Metformin, Wang 2008, n=5",
+                        "Simulation": "DDI, Metformin, Wang 2008, n=6",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin + Cimetidine, n=5",
                         "StartTime": 146,
@@ -275,7 +275,7 @@
                     },
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Metformin, Wang 2008, n=6",
+                        "Simulation": "DDI, Cimetidine + Metformin, Wang 2008, n=5",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin Control, n=6",
                         "StartTime": 146,
@@ -380,14 +380,14 @@
                                 "SimulationControl": {
                                     "Project": "Cimetidine-Metformin-DDI",
                                     "Simulation": "DDI, Metformin, Wang 2008, n=6",
-                                    "StartTime": 1,
+                                    "StartTime": 146,
                                     "EndTime": 160,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Cimetidine-Metformin-DDI",
                                     "Simulation": "DDI, Cimetidine + Metformin, Wang 2008, n=5",
-                                    "StartTime": 1,
+                                    "StartTime": 146,
                                     "EndTime": 160,
                                     "TimeUnit": "h"
                                 }
