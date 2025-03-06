@@ -37,7 +37,7 @@
                     "Type": "Formulation",
                     "Name": "Glucophage Tablet_Block 2008 (Weibull and food)",
                     "Project": "Metformin"
-                }, 
+                },
                 {
                     "Type": "Formulation",
                     "Name": "Glucophage Tablet_Block 2008 (Weibull)",
@@ -234,24 +234,24 @@
                 "OutputMappings": [
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Cimetidine + Metformin, Somogyi 1987, fed, n=7",
+                        "Simulation": "DDI, Metformin, Somogyi 1987, fed, n=7",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Plasma, Metformin Control, n=7",
                         "StartTime": 0,
                         "TimeUnit": "h",
                         "Color": "#2166ac",
-                        "Caption": "Control (without Probenecid)",
+                        "Caption": "Control (without Cimetidine)",
                         "Symbol": "Circle"
                     },
                     {
                         "Project": "Cimetidine-Metformin-DDI",
-                        "Simulation": "DDI, Metformin, Somogyi 1987, fed, n=7",
+                        "Simulation": "DDI, Cimetidine + Metformin, Somogyi 1987, fed, n=7",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Plasma, Metformin + Cimetidine, n=7",
                         "StartTime": 0,
                         "TimeUnit": "h",
                         "Color": "#b2182b",
-                        "Caption": "Treatment (with Probenecid)",
+                        "Caption": "Treatment (with Cimetidine)",
                         "Symbol": "Square"
                     }
                 ]
@@ -259,29 +259,29 @@
             {
                 "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
                 "Title": "Wang 2008 (390 mg PO)",
-                "SimulationDuration": 40,
+                "SimulationDuration": 16,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
                         "Project": "Cimetidine-Metformin-DDI",
                         "Simulation": "DDI, Metformin, Wang 2008, n=6",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
-                        "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin + Cimetidine, n=5",
+                        "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin Control, n=6",
                         "StartTime": 146,
                         "TimeUnit": "h",
                         "Color": "#2166ac",
-                        "Caption": "Control (without Probenecid)",
+                        "Caption": "Control (without Cimetidine)",
                         "Symbol": "Circle"
                     },
                     {
                         "Project": "Cimetidine-Metformin-DDI",
                         "Simulation": "DDI, Cimetidine + Metformin, Wang 2008, n=5",
                         "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
-                        "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin Control, n=6",
+                        "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin + Cimetidine, n=5",
                         "StartTime": 146,
                         "TimeUnit": "h",
                         "Color": "#b2182b",
-                        "Caption": "Treatment (with Probenecid)",
+                        "Caption": "Treatment (with Cimetidine)",
                         "Symbol": "Square"
                     }
                 ]
