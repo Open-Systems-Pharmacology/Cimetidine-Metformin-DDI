@@ -9492,6 +9492,18 @@
         "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Metformin|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "DDI, Metformin Cocktail, Boehringer 2018, n=11|Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
+          "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Urine, Metformin Control, n=11"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "DDI, Metformin Cocktail, Boehringer 2018, n=11|Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Plasma, Metformin Control, n=11"
+        }
+      ],
       "Individual": "Boehringer_2018, n=11",
       "Compounds": [
         {
@@ -9800,6 +9812,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Metformin|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "DDI, Metformin, Somogyi 1987, fed, n=7|Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
+          "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Urine, Metformin Control, n=7"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "DDI, Metformin, Somogyi 1987, fed, n=7|Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Plasma, Metformin Control, n=7"
+        }
       ],
       "Individual": "Somogyi_1987, n=7",
       "Compounds": [
@@ -10166,6 +10190,18 @@
         "Organism|PeripheralVenousBlood|Cimetidine|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
         "Organism|Kidney|Urine|Cimetidine|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "DDI, Cimetidine + Metformin Cocktail, Boehringer 2018, n=11|Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Plasma, Metformin + Cimetidine, n=11"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "DDI, Cimetidine + Metformin Cocktail, Boehringer 2018, n=11|Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
+          "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Urine, Metformin + Cimetidine, n=11"
+        }
       ],
       "Individual": "Boehringer_2018, n=11",
       "Compounds": [
@@ -10599,6 +10635,18 @@
         "Organism|PeripheralVenousBlood|Cimetidine|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
         "Organism|Kidney|Urine|Cimetidine|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "DDI, Cimetidine + Metformin, Boehringer 2018, n=13|Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Boehringer_2018, po 390 mg, solution, Plasma, Metformin + Cimetidine, n=13"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "DDI, Cimetidine + Metformin, Boehringer 2018, n=13|Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
+          "ObservedData": "Boehringer_2018, po 390 mg, solution, Urine, Metformin + Cimetidine, n=13"
+        }
       ],
       "Individual": "Boehringer_2018, n=13",
       "Compounds": [
@@ -11093,6 +11141,18 @@
         "Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
         "Organism|Kidney|Urine|Cimetidine|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "DDI, Cimetidine + Metformin, Somogyi 1987, fed, n=7|Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Plasma, Metformin + Cimetidine, n=7"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "DDI, Cimetidine + Metformin, Somogyi 1987, fed, n=7|Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
+          "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Urine, Metformin + Cimetidine, n=7"
+        }
+      ],
       "Individual": "Somogyi_1987, n=7",
       "Compounds": [
         {
@@ -11448,6 +11508,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Metformin|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "DDI, Metformin, Boehringer 2018, n=13|Organism|Kidney|Urine|Metformin|Fraction excreted to urine",
+          "ObservedData": "Boehringer_2018, po 390 mg, solution, Urine, Metformin Control, n=13"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "DDI, Metformin, Boehringer 2018, n=13|Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Boehringer_2018, po 390 mg, solution, Plasma, Metformin Control, n=13"
+        }
       ],
       "Individual": "Boehringer_2018, n=13",
       "Compounds": [
@@ -11886,7 +11958,7 @@
             0.0279406
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
