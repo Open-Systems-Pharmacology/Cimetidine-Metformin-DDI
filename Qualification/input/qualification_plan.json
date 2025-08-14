@@ -3,11 +3,11 @@
     "Projects": [
         {
             "Id": "Cimetidine",
-            "Path": "https://raw.githubusercontent.com/PavelBal/Cimetidine-Model/refs/heads/update-mate1-Ki/Cimetidine-Model.json"
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Cimetidine-Model/v2.0/Cimetidine-Model.json"
         },
         {
             "Id": "Metformin",
-            "Path": "https://raw.githubusercontent.com/mgsc1020/Metformin-Model/refs/heads/master/Metformin-Model.json"
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Metformin-Model/v1.0/Metformin-Model.json"
         },
         {
             "Id": "Cimetidine-Metformin-DDI",
@@ -49,7 +49,7 @@
     "ObservedDataSets": [
         {
             "Id": "DDI Ratios",
-            "Path": "https://raw.githubusercontent.com/mgsc1020/Database-for-observed-data/refs/heads/master/DDI.csv",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.7/DDI.csv",
             "Type": "DDIRatio"
         }
     ],
