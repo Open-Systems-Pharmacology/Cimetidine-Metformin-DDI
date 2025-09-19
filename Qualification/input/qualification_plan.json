@@ -1,0 +1,474 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.1/schemas/OSP_Qualification_Plan_Schema.json",
+    "Projects": [
+        {
+            "Id": "Cimetidine",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Cimetidine-Model/v2.0/Cimetidine-Model.json"
+        },
+        {
+            "Id": "Metformin",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Metformin-Model/v1.0/Metformin-Model.json"
+        },
+        {
+            "Id": "Cimetidine-Metformin-DDI",
+            "Path": "../../Cimetidine-Metformin-DDI.json",
+            "BuildingBlocks": [
+                {
+                    "Type": "Compound",
+                    "Name": "Cimetidine",
+                    "Project": "Cimetidine"
+                },
+                {
+                    "Type": "Compound",
+                    "Name": "Metformin",
+                    "Project": "Metformin"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Solution",
+                    "Project": "Cimetidine"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Tablet",
+                    "Project": "Cimetidine"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Glucophage Tablet_Block 2008 (Weibull and food)",
+                    "Project": "Metformin"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Glucophage Tablet_Block 2008 (Weibull)",
+                    "Project": "Metformin"
+                }
+            ]
+        }
+    ],
+    "ObservedDataSets": [
+        {
+            "Id": "DDI Ratios",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.7/DDI.csv",
+            "Type": "DDIRatio"
+        }
+    ],
+    "Plots": {
+        "AxesSettings": {
+            "GOFMergedPlotsPredictedVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "GOFMergedPlotsResidualsOverTime": [
+                {
+                    "Type": "X",
+                    "Dimension": "Time",
+                    "Unit": "h",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "ComparisonTimeProfile": [
+                {
+                    "Type": "X",
+                    "Dimension": "Time",
+                    "Unit": "h",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsPredictedVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsResidualsVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "PKRatioPlots": [
+                {
+                    "Type": "X",
+                    "Dimension": "Age",
+                    "Unit": "year(s)",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ]
+        },
+        "PlotSettings": {
+            "ChartWidth": 500,
+            "ChartHeight": 400,
+            "Fonts": {
+                "AxisSize": 11,
+                "LegendSize": 9,
+                "OriginSize": 9,
+                "FontFamilyName": "Arial",
+                "WatermarkSize": 40
+            }
+        },
+        "AllPlots": [],
+        "GOFMergedPlots": [],
+        "ComparisonTimeProfilePlots": [
+            {
+                "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
+                "Title": "Boehringer 2018 (7.8 mg PO)",
+                "SimulationDuration": 50,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Metformin Cocktail, Boehringer 2018, n=11",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Plasma, Metformin Control, n=11",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Cimetidine)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Cimetidine + Metformin Cocktail, Boehringer 2018, n=11",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Boehringer_2018, po 7.8 mg, Cocktail, solution, Plasma, Metformin + Cimetidine, n=11",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Cimetidine)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
+                "Title": "Boehringer 2018 (390 mg PO)",
+                "SimulationDuration": 45,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Metformin, Boehringer 2018, n=13",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Boehringer_2018, po 390 mg, solution, Plasma, Metformin Control, n=13",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Cimetidine)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Cimetidine + Metformin, Boehringer 2018, n=13",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Boehringer_2018, po 390 mg, solution, Plasma, Metformin + Cimetidine, n=13",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Cimetidine)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
+                "Title": "Somogyi 1987 (195 mg PO)",
+                "SimulationDuration": 130,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Metformin, Somogyi 1987, fed, n=7",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Plasma, Metformin Control, n=7",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Cimetidine)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Cimetidine + Metformin, Somogyi 1987, fed, n=7",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Somogyi_1987, po 195 mg qd, fed, Plasma, Metformin + Cimetidine, n=7",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Cimetidine)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Cimetidine-Metformin-DDI-timeprofile",
+                "Title": "Wang 2008 (390 mg PO)",
+                "SimulationDuration": 16,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Metformin, Wang 2008, n=6",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin Control, n=6",
+                        "StartTime": 146,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Cimetidine)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Cimetidine-Metformin-DDI",
+                        "Simulation": "DDI, Cimetidine + Metformin, Wang 2008, n=5",
+                        "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Wang_2008, po 390 mg, Plasma, Metformin + Cimetidine, n=5",
+                        "StartTime": 146,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Cimetidine)",
+                        "Symbol": "Square"
+                    }
+                ]
+            }
+        ],
+            "DDIRatioPlots": [
+            {
+                "SectionReference": "qualification-of-use-case-mate-oct-ddi",
+                "Title": "Cimetidine-Metformin DDI",
+                "PKParameters": [
+                    "AUC_tEnd",
+                    "C_max"
+                ],
+                "PlotTypes": [
+                    "predictedVsObserved",
+                    "residualsVsObserved"
+                ],
+                "Artifacts": [
+                    "Plot",
+                    "GMFE",
+                    "Measure",
+                    "Table"
+                ],
+                "Subunits": [
+                    "Mechanism",
+                    "Perpetrator",
+                    "Victim"
+                ],
+                "Groups": [
+                        {
+                        "Caption": "Cimetidine + Metformin (PO)",
+                        "Color": "#FF0000",
+                        "Symbol": "Circle",
+                        "DDIRatios": [
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18006,
+                                "SimulationControl": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Metformin Cocktail, Boehringer 2018, n=11",
+                                    "StartTime": 1,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Cimetidine + Metformin Cocktail, Boehringer 2018, n=11",
+                                    "StartTime": 1,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18007,
+                                "SimulationControl": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Metformin, Somogyi 1987, fed, n=7",
+                                    "StartTime": 96,
+                                    "EndTime": 120,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Cimetidine + Metformin, Somogyi 1987, fed, n=7",
+                                    "StartTime": 96,
+                                    "EndTime": 120,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18008,
+                                "SimulationControl": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Metformin, Boehringer 2018, n=13",
+                                    "StartTime": 1,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Cimetidine + Metformin, Boehringer 2018, n=13",
+                                    "StartTime": 1,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Metformin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18009,
+                                "SimulationControl": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Metformin, Wang 2008, n=6",
+                                    "StartTime": 146,
+                                    "EndTime": 160,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Cimetidine-Metformin-DDI",
+                                    "Simulation": "DDI, Cimetidine + Metformin, Wang 2008, n=5",
+                                    "StartTime": 146,
+                                    "EndTime": 160,
+                                    "TimeUnit": "h"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Inputs": [],
+    "Sections": [
+        {
+            "Reference": "introduction",
+            "Title": "Introduction",
+            "Sections": [
+                {
+                    "Reference": "objective",
+                    "Title": "Objective",
+                    "Content": "Content/Qualification_DDI_objective.md"
+                },
+                {
+                    "Reference": "oct-mate-ddi-network",
+                    "Title": "OCT/MATE1 DDI network",
+                    "Content": "Content/Qualification_description.md",
+                    "Sections": [
+                        {
+                            "Reference": "Cimetidine-Metformin-DDI",
+                            "Title": "Cimetidine-Metformin-DDI",
+                            "Content": "Content/Cimetidine-Metformin-DDI.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Reference": "qualification-of-use-case-mate-oct-ddi",
+            "Title": "Qualification of Use Case Cimetidine-Metformin DDI",
+            "Content": "Content/Intro_evaluation_DDI_network.md"
+        },
+        {
+            "Reference": "concentration-time-profiles",
+            "Title": "Concentration-Time Profiles",
+            "Content": "Content/Intro_evaluation_CTprofiles.md",
+            "Sections": [
+                {
+                    "Reference": "Cimetidine-Metformin-DDI-timeprofile",
+                    "Title": "Cimetidine-Metformin DDI"
+                }
+            ]
+        },
+        {
+            "Reference": "references",
+            "Title": "References",
+            "Content": "Content/References.md"
+        },
+        {
+            "Reference": "appendix",
+            "Title": "Appendix",
+            "Sections": [
+                {
+                    "Reference": "osp-introduction",
+                    "Title": "Open Systems Pharmacology Suite (OSPS) Introduction",
+                     "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/OSPS_Introduction.md"
+                },
+                {
+                    "Reference": "mathematical-implementation-of-ddi",
+                    "Title": "Mathematical Implementation of Drug-Drug Interactions",
+                     "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/Mathematical_Implementation_of_DDI.md"
+                },
+                {
+                    "Reference": "automatic-requalification-workflow",
+                    "Title": "Automatic (re)-qualification workflow",
+                    "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/Qualification_Workflow.md"
+                }
+            ]
+        }
+    ],
+    "Intro": [
+        {
+            "Path": "Content/titlepage.md"
+          }
+    ]
+}
